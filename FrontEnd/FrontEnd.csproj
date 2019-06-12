@@ -70,6 +70,7 @@
     <Content Include="CodeTheWay.html" />
     <Content Include="Heroes.html" />
     <Content Include="Life.html" />
+    <Content Include="Media.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
