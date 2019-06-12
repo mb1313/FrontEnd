@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CodeTheWay.html" />
+    <Content Include="ctwStyle.css" />
     <Content Include="Heroes.html" />
     <Content Include="Life.html" />
     <Content Include="Media.html" />
