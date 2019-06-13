@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="ctwStyle.css" />
     <title>Heroes for Healthcare</title>
 </head>
-<body>
+<body onload="showHide()">
     <img src="/Images/Heroes Logo.png" width="250px" height="150px" />
     <p class="majorHeading">Heroes for Healthcare</p>
     <img src="/Images/Heroes2.png" height="200px" width="300px" align="left" />
@@ -17,17 +17,41 @@
         Many U.S. Veterans find it hard to secure a job in healthcare when they’re ready to work in the civilian world. Even after showing dedication, strong work ethic, and leadership while serving our country, many military members can’t find jobs.
     </p>
     <ul align="right" class="bodyText">
-        <li>453,000 unemployed veterans in 2016</li>
-        <li> Post-Sept. 11 veterans tend to be unemployed at higher rates than other veterans</li>
+        <li>
+            <div class="tooltip">
+                Unemployment
+                <div class="tooltiptext">453,000 unemployed veterans in 2016</div>
+            </div>
+        </li>
+        <li>
+            <div class="tooltip">
+                9/11
+                <div class="tooltiptext">Post-Sept. 11 veterans tend to be unemployed at higher rates than other veterans</div>
+            </div>
+        </li>
     </ul>
-    <p class="minorHeading">Message from the President</p>
-    <p class="bodyText">
-        I started Heroes for Healthcare to help our U.S. military personnel receive the resources and credentials they need to continue their career in healthcare as a civilian.
+    <button onclick="showHide()" class="buttonFormatting">Show Message from President</button>
+    <div id="message">
+        <p class="minorHeading">Message from the President</p>
+        <p class="bodyText">
+            I started Heroes for Healthcare to help our U.S. military personnel receive the resources and credentials they need to continue their career in healthcare as a civilian.
 
-        We need supporters like you to help our mission so our service members can get a job and better their lives.
+            We need supporters like you to help our mission so our service members can get a job and better their lives.
 
-        After all they did for us, supporting this organization seems like the right thing to do. Make a difference today by supporting Heroes for Healthcare.
-    </p>
+            After all they did for us, supporting this organization seems like the right thing to do. Make a difference today by supporting Heroes for Healthcare.
+        </p>
+    </div>
     <a href="CodeTheWay.html" class="navigationLink">Home</a>
 </body>
 </html>
+<script>
+    function showHide() {
+        var x = document.getElementById("message");
+        if (x.style.display !== "none") {
+            x.style.display = "none";
+        }
+        else {
+            x.style.display = "block";
+        }
+    }
+</script>
